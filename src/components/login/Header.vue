@@ -13,12 +13,11 @@
 
 <style>
     .XGH {
-        width: 60px;
-        height: 80px;
+        width: 100px;
+        height: 120px;
         background-color: white;
-        /* circle border */
         border-radius: 30%;
-
+        margin-bottom: 25px;
     }
 
     
