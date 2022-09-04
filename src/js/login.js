@@ -1,4 +1,4 @@
 import { createApp } from "vue";
-import Login from "./Login.vue";
+import Login from "../Login.vue";
 
 createApp(Login).mount("#loginPage");

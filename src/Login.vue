@@ -6,25 +6,41 @@
 
 </script>
 
+<script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+</script>
+
 <template>
 
     <LoadingScreen />
 
-    <div class="login">
-        <LoginHeader />
-        <LoginContent />
-        <LoginFooter />
+    <div class="w3layouts-main">
+        <div class="bg-layer">
+            <h1>Giro de Leitos - Login</h1>
+            <div class="header-main">
+                <LoginHeader />
+                <LoginContent />
+            </div>
+            <LoginFooter />
+        </div>
     </div>
 
 </template>
 
 <style>
-    @import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
-    .login {
-        background-color: aqua;
-        height: 100vh;
-        z-index: 1;
-    }
+@import url('./css/style.css');
+@import url('./css/font-awesome.min.css');
 
+
+html {
+    overflow: hidden;
+}
+       
 </style>
