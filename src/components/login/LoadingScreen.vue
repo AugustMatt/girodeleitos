@@ -1,6 +1,6 @@
 <template>
     <div class="preloader">
-        <img class="animation__shake" src="/images/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+        <img class="animation__shake" src="/icons/gohorse.png" height="120" width="100">
     </div>
 </template>
 
@@ -33,6 +33,8 @@
         vertical-align: middle;
         border-style: none; 
         animation: shake 1.5s;
+        background-color: white;
+        border-radius: 30%;
     }
 
     @keyframes shake {
