@@ -11,6 +11,7 @@ import { onErrorCaptured } from 'vue';
             }
         },
         methods:{
+
             onSubmit(e){
 
                 e.preventDefault();
@@ -32,17 +33,15 @@ import { onErrorCaptured } from 'vue';
                 fetch('http://127.0.0.1:8000/api/users/sexo', myInit)
                 .then(function(response) {
                     return response.json();
-                })
-                .then(this.handleErrors)
-                .then(function(data) {
-
-                    alert('ok');
-                
+                }).then(this.handleErrors).then(function(data) {
+                    console.log(data);
+                    // window.location.href = "../../../pages/sexo.html";
                 }).catch(function(error) {
                     alert(error.message);
                 });
 
             },
+            
             handleErrors(response){
                 if(response.error != undefined){
                     throw Error(response.error);
